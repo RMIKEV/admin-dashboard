@@ -246,7 +246,7 @@ nav div{
 section {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap:10px;
+  gap:50px;
   background-color: #f3f4f6;
   padding: 15px;
   height: 758.125px;
@@ -257,7 +257,7 @@ section {
 
 .projects{
   display: grid;
-  grid-template-columns: repeat(2, 380px);
+  grid-template-columns: repeat(2, 400px);
   grid-template-rows: repeat(3, 200px);
   gap: 20px;
   padding-top: 20px;
@@ -289,4 +289,26 @@ section {
   align-items: end;
   padding-bottom: 20px;
 
+}
+
+.announcements > div > div{
+  display: grid;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 20px;
+  font-size: 0.8rem;
+
+}
+
+.bdr > div{
+  border-bottom: 1px solid  rgba(102, 102, 102, 0.5);
+  padding:10px 0px;
+  
+}
+
+.tren{
+  height: 280px;
 }
