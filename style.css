@@ -66,12 +66,25 @@ h6 {
 #__next {
   isolation: isolate;
 }
+body, html{
+  height: 100%;
+}
+
+
 
 /* basic layout - grid */
 body {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  
+  height: 100vh;
+
+ 
+ 
+}
+
+
+.right{
+  grid-row:1/2;
 }
 
 
@@ -129,12 +142,21 @@ svg{
   min-width: 40px;
  }
 
+
+
+
+
+
+
+
+
 /* navbar */
 nav{
   display: grid;
+  height: 165px;
   background-color: rgb(255, 254, 254);
-  padding: 15px 20px;
-  gap:20px;
+  padding: 5px 10px;
+  gap:5px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
   
@@ -175,8 +197,6 @@ nav div{
   justify-content: end;
   align-items: center;
   gap:15px;
-  /* flex: 0;
-  flex-shrink: 0; */
   padding-right: 70px;
 }
 
@@ -204,14 +224,69 @@ nav div{
 .nav-3{
   display: grid;
   grid-template-columns: .1fr 1fr;
-  gap: 10px;
+  align-items: center;
+  justify-items: start;
+  gap: 5px;
 }
 .nav-3 img{
-  min-height: 75px;
-  min-width: 75px;
+  min-height: 55px;
+  min-width: 55px;
 }
 
-/* section */
-section{
+
+
+
+
+
+
+
+
+/* section css */
+
+section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap:10px;
+  background-color: #f3f4f6;
+  padding: 15px;
+  height: 758.125px;
   
+
+
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: repeat(2, 380px);
+  grid-template-rows: repeat(3, 200px);
+  gap: 20px;
+  padding-top: 20px;
+
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  padding: 10px  5px 10px 5px;
+  background-color: white;
+  border-radius: 1rem;
+  border-left: rgb(99, 32, 134) 10px solid;
+}
+
+.card .content{
+  flex: 1 1 auto;
+
+}
+
+.share svg path{
+  fill: black;
+}
+.share {
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  justify-content: end;
+  align-items: end;
+  padding-bottom: 20px;
+
 }
